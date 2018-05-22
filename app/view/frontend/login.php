@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title><?php echo TITLE; ?> | Login</title>
-	<meta charset="utf-8">
+  <title><?php echo TITLE; ?> | Login</title>
+  <meta charset="utf-8">
 </head>
 <body>
 
@@ -26,19 +26,19 @@ if(!empty($params['box_info']['msg'])) {
 ?>
 
 <form action="<?php echo $params['url'] . '/' . $pagesList['page_login']['url']; ?>" method="POST">
-	<input type="hidden" name="action" value="login" />
-	<fieldset>
-		<label>Username</label>
-		<input type="text" name="username">
-	</fieldset>
-	<fieldset>
-		<label>Password</label>
-		<input type="password" name="password">
-	</fieldset>
-	<fieldset>
-        <label><input type="checkbox" name="remember" /> Remember me</label>
-    </fieldset>
-	<button type="submit">Log in</button>
+  <input type="hidden" name="action" value="login" />
+  <fieldset>
+    <label>Username</label>
+    <input type="text" name="username">
+  </fieldset>
+  <fieldset>
+    <label>Password</label>
+    <input type="password" name="password">
+  </fieldset>
+  <fieldset>
+    <label><input type="checkbox" name="remember" /> Remember me</label>
+  </fieldset>
+  <button type="submit">Log in</button>
 </form>
 </body>
 </html>

@@ -33,36 +33,36 @@ $pagesList = array();
 
 // Home controller
 $pagesList['index'] = array(
-	'tracking' => 'a7xiu0',
-	'url' => '',
-	'controller' => 'frontend/Home.php'
+    'tracking' => 'a7xiu0',
+    'url' => '',
+    'controller' => 'frontend/Home.php'
 );
 
 // Sitemap
 $pagesList['sitemap'] = array(
-	'url' => 'sitemap.xml'
+    'url' => 'sitemap.xml'
 );
 
 // Default pages - Please, don't modify them
 $pagesList['page_error'] = array(
-	'tracking' => '8ia9fs',
-	'url' => 'error',
-	'controller' => 'default/Error.php'
+    'tracking' => '8ia9fs',
+    'url' => 'error',
+    'controller' => 'default/Error.php'
 );
 $pagesList['pixel_tracking'] = array(
-	'tracking' => '5au12d',
-	'url' => 'tracker',
-	'controller' => 'default/Tracking.php'
+    'tracking' => '5au12d',
+    'url' => 'tracker',
+    'controller' => 'default/Tracking.php'
 );
 
 // Public pages
 $pagesList['page_home'] = array(
-	'tracking' => '3fan78',
-	'url' => 'home',
-	'controller' => 'frontend/Home.php'
+    'tracking' => '3fan78',
+    'url' => 'home',
+    'controller' => 'frontend/Home.php'
 );
 $pagesList['page_login'] = array(
-	'tracking' => 'asko28',
-	'url' => 'login',
-	'controller' => 'frontend/Login.php'
+    'tracking' => 'asko28',
+    'url' => 'login',
+    'controller' => 'frontend/Login.php'
 );

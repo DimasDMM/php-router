@@ -14,21 +14,21 @@ use Utils\Connection;
 
 class ControllerDB extends Controller
 {
-	protected $needConnection;
+    protected $needConnection;
 
-	public function __construct(Manager $manager, $needConnection = false)
+    public function __construct(Manager $manager, $needConnection = false)
     {
-		parent::__construct($manager);
+        parent::__construct($manager);
 
-		$connection = new Connection();
-		$connection->connectMySQL(MYSQL_SERVER, MYSQL_DATABASE, MYSQL_USER, MYSQL_PASS);
+        $connection = new Connection();
+        $connection->connectMySQL(MYSQL_SERVER, MYSQL_DATABASE, MYSQL_USER, MYSQL_PASS);
 
-		$this->needConnection = $needConnection;
+        $this->needConnection = $needConnection;
 
-		if (empty($connection->getConnection()) && $this->needConnection) {
-			$manager->redirectHttpCode(500);
+        if (empty($connection->getConnection()) && $this->needConnection) {
+            $manager->redirectHttpCode(500);
         }
 
-		$manager->setConnection($connection);
-	}
+        $manager->setConnection($connection);
+    }
 }

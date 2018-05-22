@@ -5,21 +5,21 @@ use Core\Controller\ControllerSession;
 use Core\Manager;
 
 class Home extends ControllerSession {
-	public function __construct(Manager $manager)
+    public function __construct(Manager $manager)
     {
-		parent::__construct($manager, false);
-		$this->loadUserSession();
-	}
+        parent::__construct($manager, false);
+        $this->loadUserSession();
+    }
 
-	/**
-	 * @param array $path Optional
-	 * @param array $params Optional
-	 * @return void
-	 */
-	public function get(array $path = array(), array $params = array())
+    /**
+     * @param array $path Optional
+     * @param array $params Optional
+     * @return void
+     */
+    public function get(array $path = array(), array $params = array())
     {
-		$view = 'frontend/home.php';
+        $view = 'frontend/home.php';
         $params['user'] = $this->getUser();
-		$this->loadPage($view, $params);
-	}
+        $this->loadPage($view, $params);
+    }
 }

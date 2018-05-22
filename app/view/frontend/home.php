@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title><?php echo TITLE; ?> | Home</title>
-	<meta charset="utf-8">
+  <title><?php echo TITLE; ?> | Home</title>
+  <meta charset="utf-8">
 </head>
 <body>
 <?php echo @$params['tracking']; ?>
